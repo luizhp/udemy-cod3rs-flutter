@@ -1,0 +1,32 @@
+// #01
+funcaoFora(p1) {
+  //sentenca 1
+  //sentenca 2
+  //sentenca 3
+  return (p2) {
+    //sentenca 4
+    //sentenca 5
+  }
+};
+
+funcaoFora(3)(17); // 11s
+funcaoFora(3)(13); // 11s
+funcaoFora(3)(11); // 11s
+//Total: 33s
+
+// #02
+funcaoFora(p1) {
+  //sentenca 1
+  //sentenca 2
+  //sentenca 3
+  return (p2) {
+    //sentenca 4
+    //sentenca 5
+  }
+};
+
+var funcaoForaComParam3 = funcaoFora(3); //10s
+funcaoForaComParam3(17); //1s
+funcaoForaComParam3(13); //1s
+funcaoForaComParam3(11); //1s
+//Total: 13s

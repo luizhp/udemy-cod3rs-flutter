@@ -1,0 +1,193 @@
+Seção 1: Fundamentos de Flutter
+
+001 - Bem Vindo ao curso de Flutter
+
+002 - Mensagem do Max
+
+003 - O que é Flutter?
+
+004 - Características do Flutter
+
+005 - Flutter para APP Nativa
+
+006 - Atualizações do Flutter
+
+009 - Instalação no Linux
+
+
+
+Seção 2: Noções básicas de Flutter
+
+014 - Introdução do Módulo Noções Básicas de Flutter
+
+
+
+Seção 16: Dart - Fundamentos
+
+359 - Introdução do Módulo
+
+360 - Configuração do Dart
+
+361 - Como usar o Code Runner #01
+
+      . Select language Mode VSCODE (Ctrl+k m)
+      . Code runner START  (Ctrl+Alt+N)
+      . Code runner STOP  (Ctrl+Alt+M)
+
+362 - Como usar o Code Runner #02
+
+363 - Primeiro Programa
+
+364 - Variáveis #01
+
+365 - Variáveis #02
+
+366 - Constantes #01
+      constante é definida em tempo de compilação
+      final é definida em tempo de execução
+
+367 - Tipos Básicos #01
+      - Números (int e double)
+      - String (String)
+      - Booleano (bool)
+      - dynamic
+      - var
+
+368 - Tipos Básicos #02
+      - List (aceita repetição de itens)
+      - Map  (chave/valor)
+      - Set  (não aceita repetição de itens)
+
+369 - Notação Ponto
+
+370 - Operadores #01
+      Operadores Aritméticos (operadores binários/infix)
+      Operadores Lógicos
+
+371 - Operadores #02
+      Operadores Atribuição (binário/infix)
+      Operadores Relacionais (binário/infix)
+
+372 - Operadores #03
+      Operadores Unários
+
+373 - Operadores #04
+      Operador Ternário
+
+374 - Constantes #02
+
+375 - Interpolação
+
+376 - Usando Generics
+
+377 - Conclusão do Módulo
+
+
+
+Seção 17: Dart - Estruturas de Controle
+
+378 - Introdução do Módulo
+
+379 - If/Else
+
+380 - Desafio If/Else
+
+381 - For #01
+
+382 - For #02
+
+383 - For #03
+
+384 - While
+
+385 - Switch
+
+386 - Break/Continue
+
+387 - Desafio For
+
+388 - Desafio For - Resposta
+
+389 - Conclusão do Módulo
+
+
+
+Seção 18: Dart - Funções
+
+390 - Introdução do Módulo
+
+391 - Algoritmo e Funções
+
+392 - Básico sobre Função #01
+
+393 - Básico sobre Função #02
+
+394 - Parâmetros do tipo dinâmico
+
+395 - Parâmetros Opcionais
+
+396 - Parâmetros Nomeados
+
+397 - Função em Variável #01
+
+398 - Função em Variável #02
+
+399 - Função como Parâmetros
+
+400 - Retornar Função #01
+
+401 - Retornar Função #02
+
+402 - Função com Generics
+
+403 - Função Filter #01
+
+404 - Função Filter #02
+
+405 - Função Filter #03
+
+406 - Map & Reduce #01
+
+407 - Map & Reduce #02
+
+408 - Map & Reduce #03
+
+409 - Conclusão do Módulo
+
+
+
+Seção 19: Dart - Orientação a Objetos
+
+410 - Introdução do Módulo
+
+411 - O Básico sobre Classe
+
+412 - Métodos
+
+413 - Construtores
+
+414 - Construtures Nomeados
+
+415 - Import Relativo
+
+416 - Desafio Classe Carro
+
+417 - Desafio Classe Carro - Resposta
+
+418 - Getters/Setters
+
+419 - Composição #01
+420 - Composição #02
+421 - Composição #03
+
+-------------------------
+-------------------------
+-------------------------
+
+Links:
+
+https://dartpad.dev/
+
+
+VSCode Extensions:
+Code Runner: formulahendry.code-runner

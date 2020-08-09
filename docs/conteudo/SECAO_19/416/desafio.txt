@@ -1,0 +1,16 @@
+1) carro.dart
+Classe com construtor recebe a velocidade máxima
+int velocidadeMaxima;
+int velocidadeAtual;
+
+int acelerar() { ... } // incrementa 5 - até velocidadeMaxima
+int frear() { ... } // decrementa 5 - até 0
+bool estaNoLimite()
+
+2) teste_carro.dart
+main
+
+Estrutura pasta:
+/modelo/data.dart
+/teste/teste_data.dart
+
