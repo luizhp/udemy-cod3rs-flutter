@@ -14,9 +14,7 @@ class Resposta extends StatelessWidget {
           textColor: Colors.white,
           color: Colors.blue,
           child: Text(this._texto),
-          onPressed: (this._fnQuandoSelecionado != null
-              ? this._fnQuandoSelecionado(this._texto)
-              : null)),
+          onPressed: this._fnQuandoSelecionado(this._texto)),
     );
   }
 }
