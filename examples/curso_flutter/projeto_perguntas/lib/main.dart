@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(PerguntaApp());
 
-class PerguntaAppState extends State<PerguntaApp> {
-  var perguntaSelecionada = 0;
+class _PerguntaAppState extends State<PerguntaApp> {
+  var _perguntaSelecionada = 0;
 
-  void responder() {
+  void _responder() {
     setState(() {
-      this.perguntaSelecionada++;
+      this._perguntaSelecionada++;
     });
-    print(this.perguntaSelecionada);
+    print(this._perguntaSelecionada);
     print('Resposta 1 foi selecionada');
   }
 
-  void Function() funcaoQueRetornaUmaOutraFuncao() {
+  void Function() _funcaoQueRetornaUmaOutraFuncao() {
     return () {
       print('Resposta 4 foi selecionada');
     };
@@ -33,8 +33,8 @@ class PerguntaAppState extends State<PerguntaApp> {
           ),
           body: Column(
             children: [
-              Text(perguntas[perguntaSelecionada]),
-              RaisedButton(child: Text('Resposta 1'), onPressed: responder),
+              Text(perguntas[_perguntaSelecionada]),
+              RaisedButton(child: Text('Resposta 1'), onPressed: _responder),
               RaisedButton(
                   child: Text('Resposta 2'),
                   onPressed: () {
@@ -45,7 +45,7 @@ class PerguntaAppState extends State<PerguntaApp> {
                   onPressed: () => print('Resposta 3 foi selecionada')),
               RaisedButton(
                   child: Text('Resposta 4'),
-                  onPressed: funcaoQueRetornaUmaOutraFuncao()),
+                  onPressed: _funcaoQueRetornaUmaOutraFuncao()),
               RaisedButton(child: Text('Resposta 5'), onPressed: null)
             ],
           )),
@@ -54,7 +54,7 @@ class PerguntaAppState extends State<PerguntaApp> {
 }
 
 class PerguntaApp extends StatefulWidget {
-  PerguntaAppState createState() {
-    return PerguntaAppState();
+  _PerguntaAppState createState() {
+    return _PerguntaAppState();
   }
 }
