@@ -8,6 +8,11 @@ class Questao extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     print('Widget questao');
-    return Text(this.texto);
+    return Container(
+      width: double.infinity,
+      margin: EdgeInsets.all(10),
+      child: Text(this.texto,
+          style: TextStyle(fontSize: 28), textAlign: TextAlign.center),
+    );
   }
 }
