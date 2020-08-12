@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
 import './questao.dart';
+import './resposta.dart';
 
 void main() => runApp(PerguntaApp());
 
 class _PerguntaAppState extends State<PerguntaApp> {
   var _perguntaSelecionada = 0;
 
-  void _responder() {
-    setState(() {
-      this._perguntaSelecionada++;
-    });
-    print(this._perguntaSelecionada);
-    print('Resposta 1 foi selecionada');
-  }
-
-  void Function() _funcaoQueRetornaUmaOutraFuncao() {
+  void Function() _fnRespostaSelecionada(String opcao) {
     return () {
-      print('Resposta 4 foi selecionada');
+      setState(() {
+        this._perguntaSelecionada++;
+      });
+      print(this._perguntaSelecionada);
+      print('$opcao foi selecionada');
     };
   }
 
@@ -35,19 +32,11 @@ class _PerguntaAppState extends State<PerguntaApp> {
           body: Column(
             children: [
               Questao(perguntas[_perguntaSelecionada]),
-              RaisedButton(child: Text('Resposta 1'), onPressed: _responder),
-              RaisedButton(
-                  child: Text('Resposta 2'),
-                  onPressed: () {
-                    print('Resposta 2 foi selecionada');
-                  }),
-              RaisedButton(
-                  child: Text('Resposta 3'),
-                  onPressed: () => print('Resposta 3 foi selecionada')),
-              RaisedButton(
-                  child: Text('Resposta 4'),
-                  onPressed: _funcaoQueRetornaUmaOutraFuncao()),
-              RaisedButton(child: Text('Resposta 5'), onPressed: null)
+              Resposta("Resposta 1", this._fnRespostaSelecionada),
+              Resposta("Resposta 2", this._fnRespostaSelecionada),
+              Resposta("Resposta 3", this._fnRespostaSelecionada),
+              Resposta("Resposta 4", this._fnRespostaSelecionada),
+              Resposta("Resposta 5")
             ],
           )),
     );
