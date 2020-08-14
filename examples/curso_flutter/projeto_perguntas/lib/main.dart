@@ -69,7 +69,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
                   perguntas: this._perguntas,
                   perguntaSelecionada: this._perguntaSelecionada,
                   fnRespostaSelecionada: _fnRespostaSelecionada)
-              : Resultado()),
+              : Resultado(this._pontuacaoTotal)),
     );
   }
 }
