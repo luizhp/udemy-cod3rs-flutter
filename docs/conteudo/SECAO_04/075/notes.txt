@@ -1,0 +1,90 @@
+$ flutter create expenses
+
+Creating project expenses...
+  expenses/.idea/runConfigurations/main_dart.xml (created)
+  expenses/.idea/libraries/KotlinJavaRuntime.xml (created)
+  expenses/.idea/libraries/Dart_SDK.xml (created)
+  expenses/.idea/workspace.xml (created)
+  expenses/.idea/modules.xml (created)
+  expenses/pubspec.yaml (created)
+  expenses/.gitignore (created)
+  expenses/expenses.iml (created)
+  expenses/android/app/src/main/kotlin/com/example/expenses/MainActivity.kt (created)
+  expenses/android/app/build.gradle (created)
+  expenses/android/expenses_android.iml (created)
+  expenses/android/build.gradle (created)
+  expenses/android/app/src/debug/AndroidManifest.xml (created)
+  expenses/android/app/src/main/AndroidManifest.xml (created)
+  expenses/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png (created)
+  expenses/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png (created)
+  expenses/android/app/src/main/res/mipmap-hdpi/ic_launcher.png (created)
+  expenses/android/app/src/main/res/mipmap-mdpi/ic_launcher.png (created)
+  expenses/android/app/src/main/res/drawable/launch_background.xml (created)
+  expenses/android/app/src/main/res/values/styles.xml (created)
+  expenses/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png (created)
+  expenses/android/app/src/profile/AndroidManifest.xml (created)
+  expenses/android/.gitignore (created)
+  expenses/android/gradle.properties (created)
+  expenses/android/settings.gradle (created)
+  expenses/android/gradle/wrapper/gradle-wrapper.properties (created)
+  expenses/lib/main.dart (created)
+  expenses/.metadata (created)
+  expenses/README.md (created)
+  expenses/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings (created)
+  expenses/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist (created)
+  expenses/ios/Runner.xcworkspace/contents.xcworkspacedata (created)
+  expenses/ios/Runner/Info.plist (created)
+  expenses/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json (created)
+  expenses/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png (created)
+  expenses/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md (created)
+  expenses/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png (created)
+  expenses/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png (created)
+  expenses/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png (created)
+  expenses/ios/Runner/Base.lproj/LaunchScreen.storyboard (created)
+  expenses/ios/Runner/Base.lproj/Main.storyboard (created)
+  expenses/ios/.gitignore (created)
+  expenses/ios/Flutter/AppFrameworkInfo.plist (created)
+  expenses/ios/Flutter/Release.xcconfig (created)
+  expenses/ios/Flutter/Debug.xcconfig (created)
+  expenses/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme (created)
+  expenses/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings (created)
+  expenses/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist (created)
+  expenses/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata (created)
+  expenses/test/widget_test.dart (created)
+  expenses/ios/Runner/AppDelegate.swift (created)
+  expenses/ios/Runner/Runner-Bridging-Header.h (created)
+  expenses/ios/Runner.xcodeproj/project.pbxproj (created)
+Running "flutter pub get" in expenses...                            2,6s
+Wrote 71 files.
+
+All done!
+[✓] Flutter: is fully installed. (Channel stable, 1.20.1, on Linux, locale pt_BR.UTF-8)
+[✓] Android toolchain - develop for Android devices: is fully installed. (Android SDK version 30.0.1)
+[✓] Android Studio: is fully installed. (version 4.0)
+[!] Connected device: is not available.
+
+Run "flutter doctor" for information about installing additional components.
+
+In order to run your application, type:
+
+  $ cd expenses
+  $ flutter run
+
+Your application code is in expenses/lib/main.dart.
+
+
