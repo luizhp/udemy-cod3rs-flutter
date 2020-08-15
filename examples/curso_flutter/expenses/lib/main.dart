@@ -1,11 +1,14 @@
 import 'package:expenses/models/transaction.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 main() => runApp(ExpensesApp());
 
 class ExpensesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    initializeDateFormatting();
     return MaterialApp(home: MyHomePage());
   }
 }
@@ -61,7 +64,8 @@ class MyHomePage extends StatelessWidget {
                         ),
                         padding: EdgeInsets.all(10),
                         child: Text(
-                          'R\$ ${tr.value.toStringAsFixed(2)}',
+                          NumberFormat.currency(locale: "pt-BR", symbol: "R\$")
+                              .format(tr.value),
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
@@ -80,7 +84,7 @@ class MyHomePage extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              tr.date.toString(),
+                              DateFormat('d MMM y', 'pt-BR').format(tr.date),
                               style: TextStyle(
                                 color: Colors.grey[600],
                               ),

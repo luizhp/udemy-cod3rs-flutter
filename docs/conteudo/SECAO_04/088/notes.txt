@@ -1,0 +1,60 @@
+intl 0.16.1
+Intl #
+This package provides internationalization and localization facilities,
+including message translation, plurals and genders, date/number formatting and parsing,
+and bidirectional text.
+
+https://pub.dev/packages/intl/install
+
+
+Editar: .\pubspec.yaml
+
+   dev_dependencies:
+     flutter_test:
+       sdk: flutter
+*>   intl: ^0.16.1   <*
+
+No terminal:
+  $ flutter pub get
+
+
+No projeto, adicionar:
+  import 'package:intl/intl.dart';
+
+
+DateFormat('d MMM y').format(tr.date),
+DateFormat.yMMMd().format(tr.date),
+
+----------------------------------------------
+
+ADICIONAR PT_BR
+https://stackoverflow.com/a/49911563/5604238
+outro exemplo: sem sucesso para implementar https://pt.stackoverflow.com/questions/399390/flutter-alterar-internacionaliza%C3%A7%C3%A3o-de-nomes-de-datas
+
+1)
+import 'package:intl/date_symbol_data_local.dart';
+
+2)
+class ExpensesApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+>*    initializeDateFormatting();  <*
+
+3)
+DateFormat('d MMM y', 'pt-BR').format(tr.date),
+
+
+
+Lista de todas as LOCALES DATE FORMATING
+https://api.flutter.dev/flutter/date_symbol_data_http_request/availableLocalesForDateFormatting.html
+
+
+
+-----------------------------------------------
+segue uma formatação para Real, considerando casas decimal e milhar:
+Text(NumberFormat('R\$#,##0.00', 'pt-BR').format(tr.value)),
+ 
+Entretanto optei por formatar os valores da seguinte forma:
+final formataMoeda = NumberFormat.currency(locale: "pt-BR", symbol: "R\$");
+ 
+Text(formataMoeda.format(value))
