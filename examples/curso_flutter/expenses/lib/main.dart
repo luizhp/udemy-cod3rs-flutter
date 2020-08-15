@@ -45,19 +45,19 @@ class MyHomePage extends StatelessWidget {
                 )),
             Column(
               // #01
-              children: <Widget>[
-                ..._transactions.map((tr) {
-                  return Card(
-                    child: Text(tr.title),
-                  );
-                }).toList()
-              ],
+              // children: <Widget>[
+              //   ..._transactions.map((tr) {
+              //     return Card(
+              //       child: Text(tr.title),
+              //     );
+              //   }).toList()
+              // ],
               // #02
-              // children: _transactions.map((tr) {
-              //   return Card(
-              //     child: Text(tr.title),
-              //   );
-              // }).toList(),
+              children: _transactions.map((tr) {
+                return Card(
+                  child: Text(tr.title),
+                );
+              }).toList(),
             )
           ],
         ));
