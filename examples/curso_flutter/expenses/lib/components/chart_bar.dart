@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class ChartBar extends StatelessWidget {
   final String label;
@@ -15,7 +16,11 @@ class ChartBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Text('R\$${value.toStringAsFixed(2)}'),
+        FittedBox(
+          child: Text('${value.toStringAsFixed(2)}'),
+        ),
+        //Text('${value.toStringAsFixed(2)}'),
+        //Text(NumberFormat.currency(locale: "pt-BR", symbol: "").format(value)),
         SizedBox(height: 5),
         Container(
           height: 60,
