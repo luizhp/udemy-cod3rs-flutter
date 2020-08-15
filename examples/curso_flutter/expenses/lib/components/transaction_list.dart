@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import '../models/transaction.dart';
+import 'package:expenses/models/transaction.dart';
 
 class TransactionList extends StatelessWidget {
   final List<Transaction> transactions;
@@ -70,7 +70,7 @@ class TransactionList extends StatelessWidget {
                               // ),
                             ),
                             Text(
-                              DateFormat('d MMM y', 'pt-BR').format(tr.date),
+                              '${DateFormat('d MMM y', 'pt-BR').format(tr.date)} (${DateFormat.E().format(tr.date)})',
                               style: TextStyle(
                                 color: Colors.grey[600],
                               ),
