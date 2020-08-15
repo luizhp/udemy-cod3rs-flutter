@@ -38,7 +38,11 @@ import 'package:intl/date_symbol_data_local.dart';
 class ExpensesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
->*    initializeDateFormatting();  <*
+*>    Intl.defaultLocale = 'pt_BR';             <*
+*>    initializeDateFormatting('pt_BR', null);  <*
+    return MaterialApp(home: MyHomePage());
+  }
+}
 
 3)
 DateFormat('d MMM y', 'pt-BR').format(tr.date),
