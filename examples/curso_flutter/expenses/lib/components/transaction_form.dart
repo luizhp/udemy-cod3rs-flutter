@@ -27,12 +27,15 @@ class TransactionForm extends StatelessWidget {
         child: Column(children: <Widget>[
           TextField(
             controller: titleController,
+            keyboardType: TextInputType.text,
+            onSubmitted: (_) => _submitForm(),
             decoration: InputDecoration(
               labelText: 'Título',
             ),
           ),
           TextField(
             controller: valueController,
+            onSubmitted: (_) => _submitForm(),
             keyboardType: TextInputType.numberWithOptions(
               decimal: true,
             ),
