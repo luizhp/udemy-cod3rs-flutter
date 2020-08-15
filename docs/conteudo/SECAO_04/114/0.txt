@@ -1,0 +1,87 @@
+└─▶ flutter create playground
+Creating project playground...
+  playground/.idea/runConfigurations/main_dart.xml (created)
+  playground/.idea/libraries/KotlinJavaRuntime.xml (created)
+  playground/.idea/libraries/Dart_SDK.xml (created)
+  playground/.idea/workspace.xml (created)
+  playground/.idea/modules.xml (created)
+  playground/pubspec.yaml (created)
+  playground/.gitignore (created)
+  playground/playground.iml (created)
+  playground/android/app/src/main/kotlin/com/example/playground/MainActivity.kt (created)
+  playground/android/app/build.gradle (created)
+  playground/android/playground_android.iml (created)
+  playground/android/build.gradle (created)
+  playground/android/app/src/debug/AndroidManifest.xml (created)
+  playground/android/app/src/main/AndroidManifest.xml (created)
+  playground/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png (created)
+  playground/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png (created)
+  playground/android/app/src/main/res/mipmap-hdpi/ic_launcher.png (created)
+  playground/android/app/src/main/res/mipmap-mdpi/ic_launcher.png (created)
+  playground/android/app/src/main/res/drawable/launch_background.xml (created)
+  playground/android/app/src/main/res/values/styles.xml (created)
+  playground/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png (created)
+  playground/android/app/src/profile/AndroidManifest.xml (created)
+  playground/android/.gitignore (created)
+  playground/android/gradle.properties (created)
+  playground/android/settings.gradle (created)
+  playground/android/gradle/wrapper/gradle-wrapper.properties (created)
+  playground/lib/main.dart (created)
+  playground/.metadata (created)
+  playground/README.md (created)
+  playground/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings (created)
+  playground/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist (created)
+  playground/ios/Runner.xcworkspace/contents.xcworkspacedata (created)
+  playground/ios/Runner/Info.plist (created)
+  playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json (created)
+  playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png (created)
+  playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md (created)
+  playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png (created)
+  playground/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png (created)
+  playground/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png (created)
+  playground/ios/Runner/Base.lproj/LaunchScreen.storyboard (created)
+  playground/ios/Runner/Base.lproj/Main.storyboard (created)
+  playground/ios/.gitignore (created)
+  playground/ios/Flutter/AppFrameworkInfo.plist (created)
+  playground/ios/Flutter/Release.xcconfig (created)
+  playground/ios/Flutter/Debug.xcconfig (created)
+  playground/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme (created)
+  playground/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings (created)
+  playground/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist (created)
+  playground/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata (created)
+  playground/test/widget_test.dart (created)
+  playground/ios/Runner/AppDelegate.swift (created)
+  playground/ios/Runner/Runner-Bridging-Header.h (created)
+  playground/ios/Runner.xcodeproj/project.pbxproj (created)
+Running "flutter pub get" in playground...                          2,7s
+Wrote 71 files.
+
+All done!
+[✓] Flutter: is fully installed. (Channel stable, 1.20.1, on Linux, locale pt_BR.UTF-8)
+[✓] Android toolchain - develop for Android devices: is fully installed. (Android SDK version 30.0.1)
+[✓] Android Studio: is fully installed. (version 4.0)
+[!] Connected device: is not available.
+
+Run "flutter doctor" for information about installing additional components.
+
+In order to run your application, type:
+
+  $ cd playground
+  $ flutter run
+
+Your application code is in playground/lib/main.dart.
