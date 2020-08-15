@@ -193,6 +193,10 @@ Links:
 
 flutter.dev
 https://dartpad.dev/
+Widgets
+https://flutter.dev/docs/development/ui/widgets
+Fonts Google
+fonts.google.com
 
 
 VSCode Extensions:
