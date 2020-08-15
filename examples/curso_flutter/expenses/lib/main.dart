@@ -15,6 +15,9 @@ class ExpensesApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+  String title;
+  String value;
+
   final _transactions = <Transaction>[
     Transaction(
       id: 't1',
@@ -102,11 +105,13 @@ class MyHomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 child: Column(children: <Widget>[
                   TextField(
+                    onChanged: (newValue) => title = newValue,
                     decoration: InputDecoration(
                       labelText: 'Título',
                     ),
                   ),
                   TextField(
+                    onChanged: (newValue) => value = newValue,
                     decoration: InputDecoration(
                       labelText: 'Valor',
                     ),
@@ -117,7 +122,10 @@ class MyHomePage extends StatelessWidget {
                       FlatButton(
                         child: Text('Nova Transação'),
                         textColor: Colors.purple,
-                        onPressed: () {},
+                        onPressed: () {
+                          print(title);
+                          print(value);
+                        },
                       ),
                     ],
                   ),
