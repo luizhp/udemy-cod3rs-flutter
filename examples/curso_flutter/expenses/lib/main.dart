@@ -200,15 +200,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            _showChart
-                ? Container(
-                    height: availableHeight * 0.25,
-                    child: Chart(_recentTransactions),
-                  )
-                : Container(
-                    height: availableHeight * 0.75,
-                    child: TransactionList(_transactions, _removeTransaction),
-                  ),
+            if (_showChart)
+              Container(
+                height: availableHeight * 0.25,
+                child: Chart(_recentTransactions),
+              ),
+            if (!_showChart)
+              Container(
+                height: availableHeight * 0.75,
+                child: TransactionList(_transactions, _removeTransaction),
+              ),
           ],
         ),
       ),
