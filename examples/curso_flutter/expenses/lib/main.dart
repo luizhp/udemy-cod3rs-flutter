@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
@@ -14,8 +13,6 @@ main() => runApp(ExpensesApp());
 class ExpensesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-
     Intl.defaultLocale = 'pt_BR';
     initializeDateFormatting('pt_BR', null);
 
@@ -119,6 +116,8 @@ class _MyHomePageState extends State<MyHomePage> {
     ),
   ];
 
+  bool _showChart = false;
+
   List<Transaction> get _recentTransactions {
     return _transactions.where((tr) {
       return tr.date.isAfter(DateTime.now().subtract(
@@ -187,14 +186,29 @@ class _MyHomePageState extends State<MyHomePage> {
           // mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Container(
-              height: availableHeight * 0.25,
-              child: Chart(_recentTransactions),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text('Exibir Gráfico'),
+                Switch(
+                  value: _showChart,
+                  onChanged: (value) {
+                    setState(() {
+                      _showChart = value;
+                    });
+                  },
+                ),
+              ],
             ),
-            Container(
-              height: availableHeight * 0.75,
-              child: TransactionList(_transactions, _removeTransaction),
-            ),
+            _showChart
+                ? Container(
+                    height: availableHeight * 0.25,
+                    child: Chart(_recentTransactions),
+                  )
+                : Container(
+                    height: availableHeight * 0.75,
+                    child: TransactionList(_transactions, _removeTransaction),
+                  ),
           ],
         ),
       ),
