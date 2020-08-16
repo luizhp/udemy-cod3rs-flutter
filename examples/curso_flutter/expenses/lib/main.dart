@@ -160,7 +160,8 @@ class _MyHomePageState extends State<MyHomePage> {
     final appBar = AppBar(
         title: Text('Despesas Pessoais',
             style: TextStyle(
-              fontFamily: 'OpenSans',
+              fontSize: 20 * MediaQuery.of(context).textScaleFactor,
+              // fontFamily: 'OpenSans',
             )),
         actions: <Widget>[
           IconButton(
