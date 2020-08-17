@@ -1,0 +1,5 @@
+I/flutter ( 5147): Constructor TransactionForm
+I/flutter ( 5147): createState TransactionForm
+I/flutter ( 5147): Constructor _TransactionFormState
+I/flutter ( 5147): initState() _TransactionFormState
+I/flutter ( 5147): dispose() _TransactionFormState
