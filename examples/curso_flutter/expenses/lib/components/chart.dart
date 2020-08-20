@@ -26,8 +26,8 @@ class Chart extends StatelessWidget {
         }
       }
 
-      print('day ${DateFormat.E().format(weekDay)[0]}');
-      print('value $totalSum');
+      // print('day ${DateFormat.E().format(weekDay)[0]}');
+      // print('value $totalSum');
 
       return {
         'day': DateFormat.E().format(weekDay)[0],

@@ -1,0 +1,8 @@
+Sobre MIXIN:
+  https://medium.com/flutter-community/dart-what-are-mixins-3a72344011f3
+
+class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
+
+
+MIXIN: WidgetsBindingObserver
+
