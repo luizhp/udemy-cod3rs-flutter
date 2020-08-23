@@ -1,13 +1,25 @@
 import 'package:flutter/material.dart';
+
 import 'package:meals/utils/app_routes.dart';
+
 import 'package:meals/screens/tabs_screen.dart';
 import 'package:meals/screens/categories_meals_screen.dart';
 import 'package:meals/screens/meal_detail_screen.dart';
 import 'package:meals/screens/settings_screen.dart';
 
+import 'package:meals/models/meal.dart';
+import 'data/dummy_data.dart';
+
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  List<Meal> _avaliableMeals = DUMMY_MEALS;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,30 +37,11 @@ class MyApp extends StatelessWidget {
               )),
       routes: {
         AppRoutes.HOME: (ctx) => TabsScreen(),
-        AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
+        AppRoutes.CATEGORIES_MEALS: (ctx) =>
+            CategoriesMealsScreen(this._avaliableMeals),
         AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
         AppRoutes.SETTINGS: (ctx) => SettingsScreen(),
       },
-      // onGenerateRoute: (settings) {
-      //   if (settings.name == '/alguma-coisa') {
-      //     return null;
-      //   } else if (settings.name == '/alguma-coisa') {
-      //     return null;
-      //   } else {
-      //     return MaterialPageRoute(
-      //       builder: (_) {
-      //         return CategoriesScreen();
-      //       },
-      //     );
-      //   }
-      // },
-      // onUnknownRoute: (settings) {
-      //   return MaterialPageRoute(
-      //     builder: (_) {
-      //       return CategoriesScreen();
-      //     },
-      //   );
-      // },
     );
   }
 }
