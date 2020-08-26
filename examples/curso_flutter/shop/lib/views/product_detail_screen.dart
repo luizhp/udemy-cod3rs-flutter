@@ -20,7 +20,8 @@ class ProductDetailScreen extends StatelessWidget {
           RaisedButton(
             child: Text('+'),
             onPressed: () {
-              print(CounterProvider.of(context));
+              CounterProvider.of(context).state.inc();
+              print(CounterProvider.of(context).state.value);
             },
           )
         ]));
