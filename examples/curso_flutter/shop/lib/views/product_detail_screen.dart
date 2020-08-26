@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:shop/models/product.dart';
 import 'package:shop/providers/counter_provider.dart';
 
-class ProductDetailScreen extends StatelessWidget {
+class ProductDetailScreen extends StatefulWidget {
   // final Product product;
 
   // ProductDetailScreen(this.product);
 
+  @override
+  _ProductDetailScreenState createState() => _ProductDetailScreenState();
+}
+
+class _ProductDetailScreenState extends State<ProductDetailScreen> {
   @override
   Widget build(BuildContext context) {
     final Product product =
@@ -17,18 +22,23 @@ class ProductDetailScreen extends StatelessWidget {
           title: Text(product.title),
         ),
         body: Column(children: <Widget>[
+          Text(CounterProvider.of(context).state.value.toString()),
           RaisedButton(
             child: Text('+'),
             onPressed: () {
-              CounterProvider.of(context).state.inc();
-              print(CounterProvider.of(context).state.value);
+              setState(() {
+                CounterProvider.of(context).state.inc();
+                print(CounterProvider.of(context).state.value);
+              });
             },
           ),
           RaisedButton(
             child: Text('-'),
             onPressed: () {
-              CounterProvider.of(context).state.dec();
-              print(CounterProvider.of(context).state.value);
+              setState(() {
+                CounterProvider.of(context).state.dec();
+                print(CounterProvider.of(context).state.value);
+              });
             },
           ),
         ]));
