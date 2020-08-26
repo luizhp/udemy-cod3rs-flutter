@@ -23,7 +23,14 @@ class ProductDetailScreen extends StatelessWidget {
               CounterProvider.of(context).state.inc();
               print(CounterProvider.of(context).state.value);
             },
-          )
+          ),
+          RaisedButton(
+            child: Text('-'),
+            onPressed: () {
+              CounterProvider.of(context).state.dec();
+              print(CounterProvider.of(context).state.value);
+            },
+          ),
         ]));
   }
 }
