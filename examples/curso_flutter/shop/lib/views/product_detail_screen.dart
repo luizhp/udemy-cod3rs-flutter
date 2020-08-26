@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop/models/product.dart';
+import 'package:shop/providers/counter_provider.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   // final Product product;
@@ -12,9 +13,16 @@ class ProductDetailScreen extends StatelessWidget {
         ModalRoute.of(context).settings.arguments as Product;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(product.title),
-      ),
-    );
+        appBar: AppBar(
+          title: Text(product.title),
+        ),
+        body: Column(children: <Widget>[
+          RaisedButton(
+            child: Text('+'),
+            onPressed: () {
+              print(CounterProvider.of(context));
+            },
+          )
+        ]));
   }
 }
