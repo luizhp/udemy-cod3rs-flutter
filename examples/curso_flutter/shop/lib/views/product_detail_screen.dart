@@ -27,7 +27,11 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
             child: Text('+'),
             onPressed: () {
               setState(() {
-                CounterProvider.of(context).state.inc();
+                context
+                    .dependOnInheritedWidgetOfExactType<CounterProvider>()
+                    .state
+                    .inc();
+                // CounterProvider.of(context).state.inc();
                 print(CounterProvider.of(context).state.value);
               });
             },
@@ -36,7 +40,11 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
             child: Text('-'),
             onPressed: () {
               setState(() {
-                CounterProvider.of(context).state.dec();
+                context
+                    .dependOnInheritedWidgetOfExactType<CounterProvider>()
+                    .state
+                    .dec();
+                // CounterProvider.of(context).state.dec();
                 print(CounterProvider.of(context).state.value);
               });
             },
