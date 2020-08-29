@@ -14,10 +14,14 @@ class Carro {
 
 class Ferrari extends Carro {}
 
+class Gol extends Carro {}
+
 void main() {
   Carro c1 = Carro();
   print(c1.acelerar());
   print(c1.acelerar());
+
+  c1 = Gol();
   print(c1.acelerar());
   print(c1.frear());
   print(c1.frear());
