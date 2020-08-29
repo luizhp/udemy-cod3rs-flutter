@@ -24,7 +24,19 @@ mixin Esportivo {
   }
 }
 
-class Ferrari extends Carro with Esportivo {}
+mixin Luxo {
+  bool _arLigado = false;
+
+  ligarAr() {
+    _arLigado = true;
+  }
+
+  desligarAr() {
+    _arLigado = false;
+  }
+}
+
+class Ferrari extends Carro with Esportivo, Luxo {}
 
 class Gol extends Carro {}
 
