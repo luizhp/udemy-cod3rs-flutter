@@ -12,7 +12,19 @@ class Carro {
   }
 }
 
-class Ferrari extends Carro {}
+mixin Esportivo {
+  bool _turboLigado = false;
+
+  ligarTurbo() {
+    _turboLigado = true;
+  }
+
+  desligarTurbo() {
+    _turboLigado = false;
+  }
+}
+
+class Ferrari extends Carro with Esportivo {}
 
 class Gol extends Carro {}
 
