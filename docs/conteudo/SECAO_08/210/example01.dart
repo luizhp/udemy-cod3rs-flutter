@@ -16,11 +16,11 @@ mixin Esportivo {
   bool _turboLigado = false;
 
   ligarTurbo() {
-    _turboLigado = true;
+    this._turboLigado = true;
   }
 
   desligarTurbo() {
-    _turboLigado = false;
+    this._turboLigado = false;
   }
 }
 
@@ -28,30 +28,30 @@ mixin Luxo {
   bool _arLigado = false;
 
   ligarAr() {
-    _arLigado = true;
+    this._arLigado = true;
   }
 
   desligarAr() {
-    _arLigado = false;
+    this._arLigado = false;
   }
 }
 
-class Ferrari extends Carro with Esportivo, Luxo {}
+class Ferrari extends Carro with Esportivo, Luxo {
+  @override
+  int acelerar() {
+    if (this._turboLigado) {
+      super.acelerar();
+    }
 
-class Gol extends Carro {}
+    return super.acelerar();
+  }
+}
 
 void main() {
-  Carro c1 = Carro();
-  print(c1.acelerar());
-  print(c1.acelerar());
-
-  c1 = Gol();
-  print(c1.acelerar());
-  print(c1.frear());
-  print(c1.frear());
-
-  Carro f1 = Ferrari();
+  var f1 = Ferrari();
   print(f1.acelerar());
+
+  f1.ligarTurbo();
   print(f1.acelerar());
   print(f1.acelerar());
   print(f1.frear());
