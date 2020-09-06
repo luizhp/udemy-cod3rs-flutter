@@ -11,21 +11,23 @@ class ProductItem extends StatelessWidget {
       listen: true,
     );
     return GridTile(
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
-        child: GestureDetector(
-          onTap: () {
-            Navigator.of(context).pushNamed(
-              AppRoutes.PRODUCT_DETAIL,
-              arguments: product,
-            );
-            // Navigator.of(context).push(MaterialPageRoute(
-            //   builder: (ctx) => ProductDetailScreen(product),
-            // ));
-          },
-          child: Image.network(
-            product.imageUrl,
-            fit: BoxFit.cover,
+      child: Consumer<Product>(
+        builder: (ctx, product, _) => ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: GestureDetector(
+            onTap: () {
+              Navigator.of(context).pushNamed(
+                AppRoutes.PRODUCT_DETAIL,
+                arguments: product,
+              );
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (ctx) => ProductDetailScreen(product),
+              // ));
+            },
+            child: Image.network(
+              product.imageUrl,
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),
