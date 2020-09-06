@@ -8,7 +8,7 @@ class ProductItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final Product product = Provider.of<Product>(
       context,
-      listen: true,
+      listen: false,
     );
     return GridTile(
       child: ClipRRect(
